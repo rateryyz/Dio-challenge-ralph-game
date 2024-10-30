@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/curso-DIO-2/detona-ralph/src/styles/reset.css">
+    <link rel="stylesheet" href="/curso-DIO-2/detona-ralph/src/styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>Detona-Ralph</title>
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="menu-time">
+                <h2>Time Left</h2>
+                <h2 id="time-left">0</h2>
+            </div>
+            <div class="menu-score">
+                <h2>Your Score</h2>
+                <h2 id="score">0</h2>
+            </div>
+            <div class="menu-lives">
+                <img src="./src/images/player.png" alt="foto-do-jogador" height="60px" />
+                <h2 id="lives">3</h2>
+            </div>
+        </div>
+        <div class="panel">
+            <div class="panel-row">
+                <div class="square" id="1"></div>
+                <div class="square" id="2"></div>
+                <div class="square" id="3"></div>
+            </div>
+            <div class="panel-row">
+                <div class="square" id="4"></div>
+                <div class="square" id="5"></div>
+                <div class="square" id="6"></div>
+            </div>
+            <div class="panel-row">
+                <div class="square" id="7"></div>
+                <div class="square" id="8"></div>
+                <div class="square" id="9"></div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="blur-background" class="blur-background hidden"></div>
+    
+    <div id="game-over" class="hidden">
+        <h2>Game Over!</h2>
+        <p>Seu resultado foi: <span id="final-score">0</span></p>
+        <button id="restart-button">Reiniciar</button>
+    </div>
+    
+    <script src="/curso-DIO-2/detona-ralph/src/scripts/engine.js"></script>
+</body>
+</html>
